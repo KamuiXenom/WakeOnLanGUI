@@ -1,0 +1,58 @@
+<!--
+  ~ WakeOnLanGUI
+  ~
+  ~ @author Nico Panke <webmaster@kamuixenom.de>
+  ~ @copyright copyright (c) 2011 - 2020 Nico Panke
+  ~
+  ~ @file index.html
+  ~ @date 2020/06/25
+  -->
+
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+<head>
+    <meta charset="UTF-8">
+    <title>Wake On LAN GUI</title>
+
+    <link href="vendor/twbs/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <script src="vendor/components/jquery/jquery.min.js" type="application/javascript"></script>
+    <script src="vendor/twbs/bootstrap/dist/js/bootstrap.bundle.min.js" type="application/javascript"></script>
+    <script src="scripts/wol.js" type="application/javascript"></script>
+</head>
+<body class="d-flex flex-column h-100" cz-shortcut-listen="true">
+    <!-- Begin page content -->
+    <main role="main" class="flex-shrink-0">
+        <div class="container">
+            <h1 class="mt-5">Verfügbare Computer</h1>
+
+            <table class="table" id="wol" class="wol">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Computer</th>
+                        <th scope="col">MAC</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="hide wol-row-base">
+                        <td class="wol-action">
+                            <a href="#" class="btn btn-sm btn-success">Wake</a>
+                        </td>
+                        <td class="wol-name">Name</td>
+                        <td class="wol-mac">00:00:00:00:00:00</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </main>
+
+    <footer class="footer mt-auto py-3">
+        <div class="container">
+            <span class="text-muted">Wake On LAN GUI v0.1 &copy; <a href="mailto:nicopanke@googlemail.com">KamuiXenom</a></span>
+        </div>
+    </footer>
+
+</body>
+</html>

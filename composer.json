@@ -1,0 +1,19 @@
+{
+  "name": "kxp/wakeonlangui",
+  "description": "",
+  "version": "0.1-alpha",
+  "authors": [
+    {
+      "name": "Nico Panke",
+      "email": "nicopanke@googlemail.com",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "components/jquery": "3.5.1",
+    "twbs/bootstrap": "4.5.0",
+    "diegonz/php-wake-on-lan": "2.1.0",
+    "tonyfarney/csv-reader": "1.0.1",
+    "ext-json": "*"
+  }
+}
