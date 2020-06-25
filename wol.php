@@ -10,8 +10,7 @@
  */
 
 define('COMPUTER_CSV_PATH', 'data/computer.csv');
-define('NETWORK_BROADCAST', null);
-#define('NETWORK_BROADCAST', '192.168.0.255');
+define('NETWORK_BROADCAST', '255.255.255.255');
 
 # GET[action]:
 #  - list
