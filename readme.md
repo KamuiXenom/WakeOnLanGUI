@@ -19,9 +19,8 @@ This script cannot be used by VPN. VPN destroy the package information.
 - open data/computer.csv
 - add name and mac-address, see below
 
-
-    name,mac
-    Max,00:00:00:00:00:00
+        name,mac
+        Max,00:00:00:00:00:00
     
 - save it
 
