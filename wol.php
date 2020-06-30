@@ -42,7 +42,7 @@ if ( isset($_GET['action']) ) {
 				$csv = new \CSVReader\CSVReader();
 
 				echo json_encode([
-					'list' => $csv->setHeader(['name', 'mac'])->load($csv_content)
+					'list' => $csv->setHeader(['name', 'mac', 'ip'])->load($csv_content)
 				]);
 
 			} catch ( \Exception $e ) {
@@ -67,6 +67,35 @@ if ( isset($_GET['action']) ) {
 				$result = $pwol->wake([$_GET['mac']]);
 
 				echo json_encode($result);
+
+			} catch ( \Exception $e ) {
+				echo json_encode([
+					"error" => $e->getMessage()
+				]);
+			}
+
+			break;
+
+		case 'ping':
+			$errno = 0;
+			$errstr = "";
+
+			try {
+
+				if ( !isset($_GET['host']) ) {
+					throw new \InvalidArgumentException('missing host');
+				}
+
+				if (!$socket = @fsockopen($_GET['host'], "", $errno, $errstr, 30)) {
+					echo json_encode([
+						'online' => true
+					]);
+				} else {
+					echo json_encode([
+						'online' => false
+					]);
+					fclose($socket);
+				}
 
 			} catch ( \Exception $e ) {
 				echo json_encode([
