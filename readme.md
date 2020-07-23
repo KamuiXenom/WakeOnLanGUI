@@ -12,15 +12,15 @@
 - execute composer install in this directory
 
 # Important
-This script cannot be used by VPN. VPN destroy the package information. 
+This script cannot be used over VPN. VPN destroy the package information. 
 
 # Configuration
 ## computer list
 - open data/computer.csv
 - add name and mac-address, see below
 
-        name,mac
-        Max,00:00:00:00:00:00
+        name,mac,ip
+        Max,00:00:00:00:00:00,0.0.0.0
     
 - save it
 

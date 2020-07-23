@@ -64,7 +64,7 @@ $(document).ready(function() {
 					if ( typeof data.error != 'undefined') {
 						wolAlert(data.error);
 					} else {
-						wolAlert('Unbekannter Fehler');
+						wolAlert('Unknown Error');
 					}
 
 				}
@@ -96,7 +96,7 @@ $(document).ready(function() {
 					if ( typeof data.error != 'undefined') {
 						wolAlert(data.error);
 					} else {
-						wolAlert('Unbekannter Fehler');
+						wolAlert('Unknown Error');
 					}
 
 				}
@@ -145,7 +145,7 @@ $(document).ready(function() {
 					if ( typeof data.error != 'undefined') {
 						wolAlert(data.error);
 					} else {
-						wolAlert('Unbekannter Fehler');
+						wolAlert('Unknown Error');
 					}
 
 				}

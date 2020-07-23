@@ -10,11 +10,11 @@
     }
   ],
   "require": {
-    "components/jquery": "3.5.1",
-    "twbs/bootstrap": "4.5.0",
-    "fortawesome/font-awesome": "4.7.0",
-    "diegonz/php-wake-on-lan": "2.1.0",
-    "tonyfarney/csv-reader": "1.0.1",
+    "components/jquery": "~3.5",
+    "twbs/bootstrap": "~4.5",
+    "fortawesome/font-awesome": "~4.7",
+    "diegonz/php-wake-on-lan": "~2.1",
+    "tonyfarney/csv-reader": "~1.0",
     "ext-json": "*"
   }
 }
